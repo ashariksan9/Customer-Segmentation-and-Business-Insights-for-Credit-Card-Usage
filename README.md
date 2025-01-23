@@ -1,9 +1,9 @@
 # Customer Segmentation Using Credit Card Data 🏦💳
----
+
 ## Project Overview 🌟
 
 Customer segmentation is essential for understanding different behaviors within a customer base and crafting marketing strategies accordingly. In this project, I am tasked with performing customer segmentation for Bank ABC using credit card transaction data over the last 6 months. By implementing clustering algorithms, we can group customers into distinct segments and provide recommendations based on their spending behavior.
----
+
 ## Objective 🎯
 The goal of this project is to:
 - Obtain data using Google BigQuery 📊
@@ -11,7 +11,7 @@ The goal of this project is to:
 - Apply clustering techniques using Scikit-Learn 🤖
 - Implement clustering to segment customers based on their credit card usage 💳
 - Provide business recommendations for each customer segment 💡
----
+
 ## Dataset 📑
 The dataset used in this project contains customer credit card information, such as:
 - **TENURE** (length of time the customer has been with the bank)
@@ -20,19 +20,19 @@ The dataset used in this project contains customer credit card information, such
 - **PAYMENTS** (amount paid)
 - **CREDIT_LIMIT** (maximum credit limit)
 - **PURCHASES_FREQUENCY** (how often purchases are made)
----
+
 The data was obtained from Google BigQuery with the following parameters:
 - **Project ID**: `ftds-hacktiv8-project`
 - **Dataset Name**: `phase1_ftds_<batch-number>_hck`
 - **Table Name**: `credit-card-information`
----
+
 ## Problem Statement 💬
 Bank ABC’s marketing team requested a customer segmentation analysis based on credit card usage. The goal is to identify meaningful customer groups through clustering and provide targeted recommendations for each group.
 
 Key questions to answer:
 1. How does **TENURE** influence **PURCHASES**, **BALANCE**, and **PAYMENTS**? 
 2. Does a higher **CREDIT_LIMIT** correlate with higher **PURCHASES_FREQUENCY**? 
----
+
 ## Methodology 🧑‍💻
 
 ### 1. Data Loading 📥
@@ -52,7 +52,7 @@ The model is evaluated using the **Silhouette Score**, and results are visualize
 
 ### 6. Business Insights & Recommendations 💡
 Business recommendations are provided for each cluster to guide marketing strategies. Segments like **Cautious Spenders**, **Inactive Users**, and **Big Spenders** will benefit from tailored marketing approaches.
----
+
 ## Libraries Used 📚
 
 - `google.cloud` (for BigQuery)
@@ -76,7 +76,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import silhouette_score, silhouette_samples
 from sklearn.cluster import KMeans
 ```
----
+
 ## Model Evaluation 🏅
 ### Clustering Results 🎯
 
@@ -88,16 +88,16 @@ Cautious Spenders: Customers with low spending behavior and low balance. 💰
 Inactive Users: Customers with a long tenure but low purchasing activity. ⏳
 Regular Users: Customers with moderate spending frequency and balance. 🛒
 Big Spenders: Customers with high purchasing frequency and balance. 💸
----
+
 ## Business Recommendations 💡
 
 Cautious Spenders: Offer loyalty rewards to encourage increased purchasing frequency. 🎁
 Inactive Users: Re-engage with personalized promotions to encourage spending. 💌
 Big Spenders: Provide exclusive offers to retain these high-value customers. 💎
----
+
 ## Conclusion 🎉
 This project successfully segments customers into meaningful clusters, providing insights into customer behavior. The marketing team can now implement targeted strategies to improve customer engagement and maximize revenue.
----
+
 ## Contact
 LinkedIn: www.linkedin.com/in/muhammadasharihsan
 Email: ashar4iksan@gmail.com
