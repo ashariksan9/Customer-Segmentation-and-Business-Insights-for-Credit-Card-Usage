@@ -1,6 +1,7 @@
 # Customer Segmentation Using Credit Card Data 🏦💳
 ---
 ## Project Overview 🌟
+
 Customer segmentation is essential for understanding different behaviors within a customer base and crafting marketing strategies accordingly. In this project, I am tasked with performing customer segmentation for Bank ABC using credit card transaction data over the last 6 months. By implementing clustering algorithms, we can group customers into distinct segments and provide recommendations based on their spending behavior.
 ---
 ## Objective 🎯
@@ -78,15 +79,18 @@ from sklearn.cluster import KMeans
 ---
 ## Model Evaluation 🏅
 ### Clustering Results 🎯
+
 The K-Means model was trained with 4 clusters as determined by the Elbow Method. The evaluation of clustering results using Silhouette Score indicates good separation of customer groups.
 
 ### Insights from the clusters:
+
 Cautious Spenders: Customers with low spending behavior and low balance. 💰
 Inactive Users: Customers with a long tenure but low purchasing activity. ⏳
 Regular Users: Customers with moderate spending frequency and balance. 🛒
 Big Spenders: Customers with high purchasing frequency and balance. 💸
 ---
 ## Business Recommendations 💡
+
 Cautious Spenders: Offer loyalty rewards to encourage increased purchasing frequency. 🎁
 Inactive Users: Re-engage with personalized promotions to encourage spending. 💌
 Big Spenders: Provide exclusive offers to retain these high-value customers. 💎
